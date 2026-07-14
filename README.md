@@ -67,8 +67,7 @@ streamlit run frontend/app.py
 ```
 *The app will open automatically in your browser.*
 
----
-
+```text
 ## 📂 Project Structure
 
 Mentor-Chatbot/
@@ -102,6 +101,7 @@ Mentor-Chatbot/
 ├── LICENSE
 ├── README.md
 └── requirements.txt             # Python dependencies
+```
 
 ## 🧠 Prompt Engineering Highlights
 
