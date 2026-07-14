@@ -28,8 +28,8 @@ An intelligent, context-aware AI Mentoring platform designed to adapt to a stude
 ### 1. Clone & Setup
 
 ```bash
-git clone https://github.com/yourusername/aiims-mentor-chatbot.git
-cd aiims-mentor-chatbot
+git clone https://github.com/Maryam271/Mentor-Chatbot.git
+cd Mentor-Chatbot
 
 # Create a virtual environment
 python -m venv venv
@@ -71,29 +71,37 @@ streamlit run frontend/app.py
 
 ## 📂 Project Structure
 
-```text
-mentor_chatbot/
-├── backend/
-│   ├── config.py         # Environment variables & setup
-│   └── main.py           # FastAPI application entry point
-├── database/
-│   └── db.py             # SQLAlchemy engine & session maker
-├── frontend/
-│   └── app.py            # Streamlit UI & styling
-├── models/
-│   ├── db_models.py      # SQLAlchemy DB schemas (Message, Session)
-│   └── schemas.py        # Pydantic validation models
-├── prompts/
-│   └── prompt_builder.py # Dynamic system prompt generation
-├── routes/
-│   └── mentor_routes.py  # FastAPI routing endpoints
-├── services/
-│   ├── ai_engine.py      # Google Gemini integration & fallback logic
-│   └── mentor_service.py # Business logic orchestration
+Mentor-Chatbot/
 ├── .streamlit/
-│   └── config.toml       # Native Dark Peacock theme config                
-└── requirements.txt      # Python dependencies
-```
+│   └── config.toml              # Streamlit theme configuration
+├── backend/
+│   ├── __init__.py
+│   ├── config.py                # Environment variables & configuration
+│   └── main.py                  # FastAPI application entry point
+├── database/
+│   ├── __init__.py
+│   └── connection.py            # SQLAlchemy database connection
+├── frontend/
+│   ├── __init__.py
+│   └── app.py                   # Streamlit application
+├── models/
+│   ├── __init__.py
+│   ├── db_models.py             # SQLAlchemy database models
+│   └── schemas.py               # Pydantic request/response schemas
+├── prompts/
+│   ├── __init__.py
+│   └── prompt_builder.py        # Dynamic prompt generation
+├── routes/
+│   ├── __init__.py
+│   └── mentor_routes.py         # FastAPI API endpoints
+├── services/
+│   ├── __init__.py
+│   ├── ai_engine.py             # Google Gemini integration
+│   └── mentor_service.py        # Business logic
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt             # Python dependencies
 
 ## 🧠 Prompt Engineering Highlights
 
